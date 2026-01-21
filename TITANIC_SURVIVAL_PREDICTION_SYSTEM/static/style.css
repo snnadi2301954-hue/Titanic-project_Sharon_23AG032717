@@ -1,0 +1,99 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0b1c2d;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 500px;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+    color: #0b1c2d;
+}
+
+h2 {
+    text-align: center;
+    color: #6f4e37;
+    margin-bottom: 25px;
+}
+
+label {
+    font-weight: 600;
+    margin-top: 12px;
+    display: block;
+    color: #0b1c2d;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #6f4e37;
+    box-shadow: 0 0 6px rgba(111, 78, 55, 0.5);
+}
+
+button {
+    width: 100%;
+    background-color: #0b1c2d;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #8b1e1e;
+}
+
+/* Toast Result */
+.toast {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.toast.survived {
+    background-color: #e6f4ea;
+    color: #1b5e20;
+    border-left: 6px solid #2e7d32;
+}
+
+.toast.not-survived {
+    background-color: #fdecea;
+    color: #8b1e1e;
+    border-left: 6px solid #8b1e1e;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
